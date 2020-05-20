@@ -1,28 +1,28 @@
 if (Get-Module -ListAvailable -Name Microsoft.Online.SharePoint.PowerShell) {
     Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-	Write-Host "Le module 'Microsoft.Online.SharePoint.PowerShell' est déjà installé et a été importé"
+    Write-Host "Le module 'Microsoft.Online.SharePoint.PowerShell' est déjà installé et a été importé"
 } else {
     Install-Module Microsoft.Online.SharePoint.PowerShell -Confirm:$false -Force
     Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-	Write-Host "Le module 'Microsoft.Online.SharePoint.PowerShell' a été installé et importé"
+    Write-Host "Le module 'Microsoft.Online.SharePoint.PowerShell' a été installé et importé"
 }
 
 if (Get-Module -ListAvailable -Name SharePointPnPPowerShellOnline) {
     Import-Module SharePointPnPPowerShellOnline
-	Write-Host "Le module 'SharePointPnPPowerShellOnline' est déjà installé et a été importé"
+    Write-Host "Le module 'SharePointPnPPowerShellOnline' est déjà installé et a été importé"
 } else {
     Install-Module SharePointPnPPowerShellOnline -Confirm:$false -Force
     Import-Module SharePointPnPPowerShellOnline
-	Write-Host "Le module 'SharePointPnPPowerShellOnline' a été installé et importé"
+    Write-Host "Le module 'SharePointPnPPowerShellOnline' a été installé et importé"
 }
 
 if (Get-Module -ListAvailable -Name MSOnline) {
     Import-Module MSOnline
-	Write-Host "Le module 'MSOnline' est déjà installé et a été importé"
+    Write-Host "Le module 'MSOnline' est déjà installé et a été importé"
 } else {
     Install-Module MSOnline -Confirm:$false -Force
-	Import-Module MSOnline
-	Write-Host "Le module 'MSOnline' a été installé et importé"
+    Import-Module MSOnline
+    Write-Host "Le module 'MSOnline' a été installé et importé"
 }
 
 Add-Type -AssemblyName System.Windows.Forms
